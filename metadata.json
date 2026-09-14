@@ -1,0 +1,6 @@
+{
+  "name": "Desa Black Box AI",
+  "description": "AI-Powered Digital Memory & Smart Governance System for Desa Talangagung, Kepanjen, Malang",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

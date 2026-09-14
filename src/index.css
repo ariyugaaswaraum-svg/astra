@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Senior & Universal Accessibility - Font Size Scaling */
+html.font-mode-normal {
+  font-size: 16px;
+}
+
+html.font-mode-large {
+  font-size: 18.5px;
+}
+
+html.font-mode-extralarge {
+  font-size: 21.5px;
+}
+
+/* Ensure arbitrary small text classes also scale up dynamically in Large & Extra Large modes */
+html.font-mode-large [class*="text-[9px]"],
+html.font-mode-large [class*="text-[10px]"] {
+  font-size: 12px !important;
+}
+
+html.font-mode-large [class*="text-[11px]"],
+html.font-mode-large [class*="text-[12px]"] {
+  font-size: 14px !important;
+}
+
+html.font-mode-large [class*="text-[13px]"] {
+  font-size: 15.5px !important;
+}
+
+html.font-mode-extralarge [class*="text-[9px]"],
+html.font-mode-extralarge [class*="text-[10px]"] {
+  font-size: 14px !important;
+}
+
+html.font-mode-extralarge [class*="text-[11px]"],
+html.font-mode-extralarge [class*="text-[12px]"] {
+  font-size: 16px !important;
+}
+
+html.font-mode-extralarge [class*="text-[13px]"] {
+  font-size: 18px !important;
+}
+
+/* Smooth transition when font size changes */
+html, body, p, span, h1, h2, h3, h4, h5, h6, button, input, textarea, select {
+  transition: font-size 0.15s ease-in-out;
+}
